@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 1</title>
+    <script>// Show/Hide button based on scroll position
+window.addEventListener('scroll', ()=>{
+    const scrollTopButton = document.getElementById('scrollTopButton');
+    if (window.scrollY > 100) scrollTopButton.classList.remove('hidden');
+    else scrollTopButton.classList.add('hidden');
+});
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/index.1303bb05.css">
+</head>
+<body class="overscroll-none">
+    <div class="absolute inset-0 bg-fixed bg-hero bg-cover bg-center opacity-10 -z-10"></div>
+    <header>
+        <nav class="fixed w-full top-0 z-50 bg-blue-500 text-white">
+            <div class="container mx-auto px-4 flex justify-between items-center h-16">
+              <a href="#" class="text-xl font-bold">Logo.</a>
+              <!-- Text Menu for Large Screens -->
+              <ul class="hidden md:flex space-x-5">
+                <li><a href="" class="hover:text-gray-300 font-mono">Home</a></li>
+                <li><a href="" class="hover:text-gray-300 font-mono">About</a></li>
+                <li><a href="" class="hover:text-gray-300 font-mono">Services</a></li>
+                <li><a href="" class="hover:text-gray-300 font-mono">Contact</a></li>
+              </ul>
+              <!-- Icon Menu for Small Screens -->
+              <ul class="flex md:hidden space-x-5">
+                <li><a href="" class="p-[5px] rounded-lg border-2 hover:text-gray-300"><i class="fas fa-home"></i></a></li>
+                <li><a href="" class="p-[5px] rounded-lg border-2 hover:text-gray-300"><i class="fas fa-info-circle"></i></a></li>
+                <li><a href="" class="p-[5px] rounded-lg border-2 hover:text-gray-300"><i class="fas fa-cogs"></i></a></li>
+                <li><a href="" class="p-[5px] rounded-lg border-2 hover:text-gray-300"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="mt-16">     
+        <div class="flex m-[20px] mt-[100px]">
+            <!-- <div class="absolute inset-0 bg-hero bg-cover bg-center opacity-50"> -->
+            
+            <!-- left side -->
+            <!-- <div class="flex flex-col md:w-1/2 w-full justify-center items-center space-y-4 p-[20px] ">
+                <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-wrap ">Hi , I'm <span class="span">Julia&nbsp;Claire.</span></h1>
+                <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-wrap">Web developer</h1>
+                <div class="flex justify-center space-x-5 p-6">
+                    <a href="#" class="bg-orange-500 border-[1px] border-orange-500 text-white text-center px-6 py-2 rounded hover:bg-white hover:text-orange-500 hover:border-[1px] hover:border-orange-500 duration-300 ">Contact Me</a>
+                    <a href="#" class="bg-orange-500 border-[1px] border-orange-500 text-white text-center px-6 py-2 rounded hover:bg-white hover:text-orange-500 hover:border-[1px] hover:border-orange-500 duration-300">About Me</a>
+                  </div>
+            </div> -->
+            <div class="flex flex-col md:w-1/2 w-full justify-center">
+                <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-wrap ">Hi , I'm <span class="span">Julia&nbsp;Claire.</span></h1>
+                <!-- <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-wrap">Web developer</h1> -->
+                <h1 class="text-3xl md:text-6xl font-extrabold font-serif text-wrap ">Web developer</h1>
+                <div class="flex justify-center space-x-5 p-6">
+                    <!-- <a href="#" class="bg-orange-500 border-[1px] border-orange-500 text-white text-center text-xs md:text-m px-6 py-2 rounded hover:bg-white hover:text-orange-500 hover:border-[1px] hover:border-orange-500 duration-300 ">Contact Me</a>
+                    <a href="#" class="bg-orange-500 border-[1px] border-orange-500 text-white text-center text-xs md:text-m px-6 py-2 rounded hover:bg-white hover:text-orange-500 hover:border-[1px] hover:border-orange-500 duration-300">About Me</a> -->
+                    <a href="" class="bg-orange-500 hover:bg-orange-200 hover:border-orange-500 duration-300 hover:text-orange-500 p-2 rounded text-xs text-white md:text-base md:px-6 md:py-2">Contact me</a>
+                    <a href="" class="bg-orange-500 hover:bg-orange-200 hover:border-orange-500 duration-300 hover:text-orange-500 p-2 rounded text-xs text-white md:text-base md:px-6 md:py-2">About me</a>
+                  </div>
+            </div>
+            <!-- right side -->
+            <div class="w-1/2 h-[500px] relative justify-center hidden md:flex ">       
+                    <div class="rounded-full bg-orange-300 h-[250px] w-[250px] absolute left-[120px] top-[20%] transform translate-x-[10px] -translate-y-[20px] z-3"></div>
+                    <div class="rounded-full bg-orange-600 h-[250px] w-[250px] absolute left-[120px] top-[20%] -z-10"></div>
+                    <img src="/hero.3ab714a8.png" alt="Julia Walker" class="object-contain absolute rounded-b-full left-[120px] top-[20%] h-[250px] w-[250px] transform translate-x-[10px] -translate-y-[20px] "> 
+            </div> 
+        </div>
+
+        <div>  
+ 
+
+        <div class="flex flex-wrap flex-col justify-center gap-x-5 bg-white py-10 ">
+            <div class="text-center mb-10">
+                <h1 class="text-green-500 md:text-2xl font-semibold mb-5">Vristo-Multipurpose Tailwind CSS Admin Template</h1>
+                <p class="mb-5 text-sm md:text-base">Vristo is an admin dashboard template built with Tailwind CSS, NextJS, ReactJS, React + Laravel.</p>
+                <p class="text-sm md:text-base"> Design, Customize and Manage Your Web App with Ease - Vristo focuses on the ease of use and flexibility of the Multipurpose Tailwind CSS Admin Template. With its intuitive design, customizable components, and powerful management tools, this template makes it easy to create and manage complex web applications with minimal effort </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-x-2">
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed hover:bg-slate-300 duration-300 rounded-lg p-4 text-center mb-10 cursor-pointer">
+                <img src="/tailwindcss.5804d100.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">Tailwindcss</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 text-center hover:bg-slate-300 duration-300 mb-10 cursor-pointer">
+                <img src="/reactjs.c168c4c4.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">React</h3>
+            </div> 
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 hover:bg-slate-300 duration-300 text-center mb-10 cursor-pointer">
+                <img src="/nextjs.a5c5a9a2.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">Next</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 hover:bg-slate-300 duration-300 text-center mb-10 cursor-pointer">
+                <img src="/reactjs+laravel.159155d0.svg" class="w-24 h-14 mb-4">
+                <h3 class="font-semibold">React+Laravel</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 hover:bg-slate-300 duration-300 text-center mb-10 cursor-pointer">
+                <img src="/typescript.d8dc5d50.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">Typescript</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 hover:bg-slate-300 duration-300 text-center mb-10 cursor-pointer">
+                <img src="/vitejs.43b3deb6.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">Vite</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center border-2 w-[150px] border-dashed rounded-lg p-4 hover:bg-slate-300 duration-300 text-center mb-10 cursor-pointer">
+                <img src="/figma.99e01a83.svg" class="w-14 h-14 mb-4">
+                <h3 class="font-semibold">Figma</h3>
+            </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="py-[20px] space-y-[30px] bg-white">
+
+            <h1 class="mx-8 text-6xl font-extrabold font-serif text-orange-500">Projects</h1>
+            <div class="relative bg-orange-50 flex flex-wrap gap-x-14 gap-y-20 overflow-x-scroll p-[10px] py-[50px] justify-center">
+                <div class="relative ">
+                <div class="overflow-hidden rounded-md">
+                    <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                    <a href="#" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                    <a href="#" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                </div>
+                <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                
+                </div>
+                <div class="relative ">
+                    <div class="overflow-hidden rounded-md">
+                        <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                        <a href="#" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                        <a href="#" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                    </div>
+                    <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                    
+                    </div>
+                    <div class="relative ">
+                        <div class="overflow-hidden rounded-md">
+                            <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                            <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                            <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                        </div>
+                        <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                        
+                        </div>
+                        <div class="relative ">
+                            <div class="overflow-hidden rounded-md">
+                                <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                            </div>
+                            <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                            </div>
+                            <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                            
+                            </div>
+                            <div class="relative ">
+                                <div class="overflow-hidden rounded-md">
+                                    <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                                </div>
+                                <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                    <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                    <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                                </div>
+                                <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                                
+                                </div>
+                                <div class="relative ">
+                                    <div class="overflow-hidden rounded-md">
+                                        <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                                    </div>
+                                    <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                        <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                        <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                                    </div>
+                                    <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                                    
+                                    </div>
+                                    <div class="relative ">
+                                        <div class="overflow-hidden rounded-md">
+                                            <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                                        </div>
+                                        <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                            <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                            <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                                        </div>
+                                        <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                                        
+                                        </div>
+                                        <div class="relative ">
+                                            <div class="overflow-hidden rounded-md">
+                                                <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                                            </div>
+                                            <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                                <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                                <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                                            </div>
+                                            <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>
+                                            
+                                            </div>
+                                            <div class="relative ">
+                                                <div class="overflow-hidden rounded-md">
+                                                    <img src="/img.cc8c122e.png" alt="My Works" class="h-[250px] w-[400px] object-cover flex-shrink-0 hover:scale-110 transition-transform duration-300">
+                                                </div>
+                                                <div class="absolute bottom-[40px] left-1/4 flex gap-x-3">
+                                                    <a href="" class="btn-blue h-[50px] w-[100px] flex items-center justify-center">LTR</a>
+                                                    <a href="" class="btn-green h-[50px] w-[100px] flex items-center justify-center">RTL</a>
+                                                </div>
+                        <h3 class="flex mt-10 justify-center font-bold text-xl">Dark Theme</h3>                                             
+                    </div>
+                </div>
+            </div>
+        
+    
+    </main>
+
+    <button id="scrollTopButton" onclick="scrollToTop()" class="hidden fixed bottom-4 right-4 bg-blue-500 text-white rounded-full p-4 px-5 shadow-lg hover:bg-blue-600 transition">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </button>
+
+    
+
+<footer class="bg-white  dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center justify-center">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">© 2024 All Rights Reserved.
+    </span>
+    </div>
+</footer>
+
+
+    
+<script src="/assignment-1.3464ddca.js"></script></body>
+</html>
